@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class personlized {
+public class Personlized {
     @GetMapping("/personlized")
     public String personlized(@RequestParam(name = "limit", defaultValue = "1") String limit){
         String strRet = "{" +
