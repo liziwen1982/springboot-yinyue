@@ -21,7 +21,7 @@ public class login {
         else
             code = "200";
 
-        String strRet = STR."{\"code\":\{code},\"profile\":{\"msg\":\"profilemsg\", \"avatarUrl\":\"http://127.0.0.1/abc.png\", \"nickname\":\"至尊宝\"}}";
+        String strRet = STR."{\"code\":\{code},\"profile\":{\"msg\":\"profilemsg\", \"avatarUrl\":\"http://192.168.66.13/wechat/1.jpg\", \"nickname\":\"至尊宝\", \"userId\":\"1234512345\"}}";
 
         System.out.println(strRet);
         return strRet;
