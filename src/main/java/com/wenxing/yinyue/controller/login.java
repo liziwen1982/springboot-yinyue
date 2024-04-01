@@ -21,7 +21,7 @@ public class login {
         else
             code = "200";
 
-        String strRet = STR."{\"code\":\{code}}";
+        String strRet = STR."{\"code\":\{code},\"profile\":{\"msg\":\"profilemsg\", \"avatarUrl\":\"http://127.0.0.1/abc.png\", \"nickname\":\"至尊宝\"}}";
 
         System.out.println(strRet);
         return strRet;
