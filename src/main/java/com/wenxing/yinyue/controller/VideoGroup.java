@@ -32,6 +32,8 @@ public class VideoGroup {
     public String videoGroup(@RequestParam(name = "id", defaultValue = "") String id,
                              @CookieValue(name = "cookie3", required = false) String cookie3){
         System.out.println("cookie3:" + cookie3);
-        return "{\"code\":\"200\"}";
+        String strRet = "[{\"data\":{\"title\":\"aaa\",\"praisedCount\":\"5\",\"commentCount\":\"33\",\"creator\":{\"avatarUrl\":\"http://192.168.66.13/wechat/1.jpg\", \"nickname\":\"aaa\"},\"urlInfo\":{\"url\":\"http://192.168.66.13/videos/wechat.mp4\"}}},{\"data\":{\"title\":\"aaa\",\"praisedCount\":\"5\",\"commentCount\":\"33\",\"creator\":{\"avatarUrl\":\"http://192.168.66.13/wechat/1.jpg\", \"nickname\":\"aaa\"},\"urlInfo\":{\"url\":\"http://192.168.66.13/videos/wechat.mp4\"}}},{\"data\":{\"title\":\"aaa\",\"praisedCount\":\"5\",\"commentCount\":\"33\",\"creator\":{\"avatarUrl\":\"http://192.168.66.13/wechat/1.jpg\", \"nickname\":\"aaa\"},\"urlInfo\":{\"url\":\"http://192.168.66.13/videos/wechat.mp4\"}}},{\"data\":{\"title\":\"aaa\",\"praisedCount\":\"5\",\"commentCount\":\"33\",\"creator\":{\"avatarUrl\":\"http://192.168.66.13/wechat/1.jpg\", \"nickname\":\"aaa\"},\"urlInfo\":{\"url\":\"http://192.168.66.13/videos/wechat.mp4\"}}},{\"data\":{\"title\":\"aaa\",\"praisedCount\":\"5\",\"commentCount\":\"33\",\"creator\":{\"avatarUrl\":\"http://192.168.66.13/wechat/1.jpg\", \"nickname\":\"aaa\"},\"urlInfo\":{\"url\":\"http://192.168.66.13/videos/wechat.mp4\"}}}]";
+        System.out.println(strRet);
+        return strRet;
     }
 }
